@@ -3,15 +3,7 @@ node {
       git branch: 'testbranch', url: params.git_repo
     }
 
-	stage('Build') {
-		script {
-			docker.build "dotnetapp"
-		}
-		  
-
-    }
 	
-
 	docker.image('node:7-alpine').inside('-v $HOME:/root/') {
         stage('Test') {
             sh 'node --version'
