@@ -1,14 +1,12 @@
 node {
-    stage('Checkout git repo') {
-      git branch: 'testbranch', url: params.git_repo
-    }
+	stage 'Checkout'
+		checkout scm
 
-	docker.image('node:7-alpine').inside {
-        stage('Test') {
-            sh 'node --version'
-			sh 'cd /root'
-			sh 'ls -la'
-        }
-    }
-	
+	stage 'Build'
+		bat 'nuget restore SampleTestFmk.sln'
+		bat "\"${tool 'MSBuild'}\" SampleTestFmk.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
+
+	stage 'Archive'
+		archive 'ProjectName/bin/Release/**'
+
 }
