@@ -4,8 +4,12 @@ node {
     }
 
 	stage('Build') {
-		docker build --pull -t dotnetapp .
-		docker run --rm dotnetapp
+		steps{
+			script {
+			  docker.build dotnetapp
+			}
+		  }
+
     }
 	
 
