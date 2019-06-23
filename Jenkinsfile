@@ -3,7 +3,7 @@ node {
       git branch: 'testbranch', url: params.git_repo
     }
 
-	docker.image('node:7-alpine').inside('v $HOME:/root/') {
+	docker.image('node:7-alpine').inside('-v $HOME:/root/') {
         stage('Test') {
             sh 'node --version'
 			sh 'cd /root'
