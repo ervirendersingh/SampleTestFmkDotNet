@@ -5,7 +5,7 @@ node {
 
 	stage('Build') {
 		script {
-			docker.build dotnetapp
+			docker.build "dotnetapp"
 		}
 		  
 
