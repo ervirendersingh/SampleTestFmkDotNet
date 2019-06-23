@@ -74,3 +74,4 @@ C:\SampleTestFmkDotNet\Tests\obj\Debug\Tests.csproj.CoreCompileInputs.cache
 C:\SampleTestFmkDotNet\Tests\obj\Debug\Tests.csproj.CopyComplete
 C:\SampleTestFmkDotNet\Tests\obj\Debug\Tests.dll
 C:\SampleTestFmkDotNet\Tests\obj\Debug\Tests.pdb
+C:\SampleTestFmkDotNet\Tests\bin\Debug\chromedriver.exe

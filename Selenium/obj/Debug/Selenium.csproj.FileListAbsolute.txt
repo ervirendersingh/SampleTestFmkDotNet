@@ -26,3 +26,4 @@ C:\SampleTestFmkDotNet\Selenium\obj\Debug\Selenium.csproj.CoreCompileInputs.cach
 C:\SampleTestFmkDotNet\Selenium\obj\Debug\Selenium.csproj.CopyComplete
 C:\SampleTestFmkDotNet\Selenium\obj\Debug\Selenium.dll
 C:\SampleTestFmkDotNet\Selenium\obj\Debug\Selenium.pdb
+C:\SampleTestFmkDotNet\Selenium\obj\Debug\Selenium.csprojAssemblyReference.cache
