@@ -4,11 +4,10 @@ node {
     }
 
 	stage('Build') {
-		steps{
-			script {
-			  docker.build dotnetapp
-			}
-		  }
+		script {
+			docker.build dotnetapp
+		}
+		  
 
     }
 	
