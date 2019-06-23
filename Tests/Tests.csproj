@@ -95,7 +95,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Login\LoginFeature.feature" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DependencyResolver\DependenciesResolver.csproj">
