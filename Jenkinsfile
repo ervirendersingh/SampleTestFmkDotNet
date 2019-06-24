@@ -19,6 +19,6 @@ node {
     }
 
 	stage('publish results'){        
-        nunit testResultsPattern: './Results/TestResult.xml'
+        nunit testResultsPattern: '.\Results\TestResult.xml'
     }
 }
