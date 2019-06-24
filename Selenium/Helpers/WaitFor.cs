@@ -189,27 +189,27 @@ namespace Selenium.Helpers
             {
                 if (GetStableElement(driver, locator) != null)
                 {
-                    if (jQueryRunning())
-                    {
-                        string script = "var locator = arguments[0];";
-                        script += "return $(locator).is(':visible').toString();";
+                 //   if (jQueryRunning())
+                 //   {
+                 //       string script = "var locator = arguments[0];";
+                 //       script += "return $(locator).is(':visible').toString();";
 
-                        string displayProp = ExecuteThisScript(script, new object[] { GetStableElement(driver, locator) });
+                   //     string displayProp = ExecuteThisScript(script, new object[] { GetStableElement(driver, locator) });
                         //Retry again
-                        if (displayProp == "" || displayProp == "customException")
-                        {
-                            displayProp = ExecuteThisScript(script, new object[] { GetStableElement(driver, locator) });
-                            System.Console.WriteLine("Retried script Result [displayProp] =>" + displayProp);
-                        }
+                   //     if (displayProp == "" || displayProp == "customException")
+                    //    {
+                     //       displayProp = ExecuteThisScript(script, new object[] { GetStableElement(driver, locator) });
+                      //      System.Console.WriteLine("Retried script Result [displayProp] =>" + displayProp);
+                     //   }
 
-                        if (displayProp == "true")
-                            return true;
-                    }
-                    else
-                    {
+                      //  if (displayProp == "true")
+                     //       return true;
+                   // }
+                  //  else
+                    //{
                         if (GetStableElement(driver, locator).Displayed)
                             return true;
-                    }
+                    //}
                 }
             }
             catch (NoSuchElementException) { }

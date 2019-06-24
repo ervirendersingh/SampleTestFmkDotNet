@@ -222,18 +222,18 @@ namespace Selenium.Helpers
         public string GetAttribute(string attName)
         {
             string attValue = "";
-            if (jQueryRunning() && TestObjectLocator.LocateBy == Locator.CssSelector)
-            {
-                string script = "var locator = arguments[0];";
-                script += "var attName = arguments[1];";
-                script += "var attValue = $(locator).attr(attName);";
-                script += "return attValue;";
+          //  if (jQueryRunning() && TestObjectLocator.LocateBy == Locator.CssSelector)
+          //  {
+          //      string script = "var locator = arguments[0];";
+          //      script += "var attName = arguments[1];";
+          //      script += "var attValue = $(locator).attr(attName);";
+          //      script += "return attValue;";
 
-                IJavaScriptExecutor js = (IJavaScriptExecutor)GetDriver();
-                attValue = js.ExecuteScript(script, TestObjectLocator.Value, attName).ToString();
-            }
-            else
-            {
+          //      IJavaScriptExecutor js = (IJavaScriptExecutor)GetDriver();
+          //      attValue = js.ExecuteScript(script, TestObjectLocator.Value, attName).ToString();
+         //   }
+         //   else
+          //  {
                 string script = "var locator = arguments[0];";
                 script += "var attName = arguments[1];";
                 script += "var attValue = locator.getAttribute(attName);";
@@ -241,7 +241,7 @@ namespace Selenium.Helpers
 
                 IJavaScriptExecutor js = (IJavaScriptExecutor)GetDriver();
                 attValue = js.ExecuteScript(script, GetAutomationElement(), attName).ToString();
-            }
+         //   }
 
             if(attValue==null)
             {
@@ -398,9 +398,9 @@ namespace Selenium.Helpers
         {
             if (GetAutomationElement() != null)
             {
-                if(jQueryRunning())
-                    return IsThisElementVisible();
-                else
+                //if(jQueryRunning())
+                //    return IsThisElementVisible();
+               // else
                     return GetAutomationElement().Displayed;
             }
             else
@@ -449,24 +449,24 @@ namespace Selenium.Helpers
                 //if (IsThisElementVisible())
                 //{
                     string textValue = "";
-                    if (jQueryRunning() && TestObjectLocator.LocateBy == Locator.CssSelector)
-                    {
-                        string script = "var locator = arguments[0];";
-                        script += "var text = $(locator).text();";
-                        script += "return text;";
+                    //if (jQueryRunning() && TestObjectLocator.LocateBy == Locator.CssSelector)
+                   // {
+                   //     string script = "var locator = arguments[0];";
+                   //     script += "var text = $(locator).text();";
+                   //     script += "return text;";
 
-                        IJavaScriptExecutor js = (IJavaScriptExecutor)GetDriver();
-                        textValue = js.ExecuteScript(script, TestObjectLocator.Value).ToString();
-                    }
-                    else
-                    {
+                   //     IJavaScriptExecutor js = (IJavaScriptExecutor)GetDriver();
+                   //     textValue = js.ExecuteScript(script, TestObjectLocator.Value).ToString();
+                   // }
+                   // else
+                  //  {
                         string script = "var locator = arguments[0];";
                         script += "var text = locator.innerText;";
                         script += "return text;";
 
                         IJavaScriptExecutor js = (IJavaScriptExecutor)GetDriver();
                         textValue = js.ExecuteScript(script, GetAutomationElement()).ToString();
-                    }
+                    //}
 
                     if(textValue == null)
                         textValue = GetAutomationElement().Text.Trim();
@@ -563,18 +563,18 @@ namespace Selenium.Helpers
         public string GetCssValue(string propName)
         {
             string propValue = "";
-            if (jQueryRunning() && TestObjectLocator.LocateBy == Locator.CssSelector)
-            {
-                string script = "var locator = arguments[0];";
-                script += "var prop = arguments[1];";
-                script += "var cssValue = $(locator).css(prop);";
-                script += "return cssValue;";
+           // if (jQueryRunning() && TestObjectLocator.LocateBy == Locator.CssSelector)
+           // {
+            //    string script = "var locator = arguments[0];";
+           //     script += "var prop = arguments[1];";
+           //     script += "var cssValue = $(locator).css(prop);";
+           //     script += "return cssValue;";
 
-                IJavaScriptExecutor js = (IJavaScriptExecutor)GetDriver();
-                propValue = js.ExecuteScript(script, TestObjectLocator.Value, propName).ToString();
-            }
-            else
-            {
+             //   IJavaScriptExecutor js = (IJavaScriptExecutor)GetDriver();
+             //   propValue = js.ExecuteScript(script, TestObjectLocator.Value, propName).ToString();
+           // }
+          //  else
+           // {
                 string script = "var element = arguments[0];";
                 script += "var prop = arguments[1];";
                 script += "return getStyle(element, prop);";
@@ -616,7 +616,7 @@ namespace Selenium.Helpers
                         propValue = GetAutomationElement().GetCssValue(propName);
                     }
                 }
-            }
+            //}
 
             return propValue;
         }

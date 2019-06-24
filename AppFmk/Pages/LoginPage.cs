@@ -11,7 +11,7 @@ namespace AppFmk.Pages
 
         public LoginPage(IBasePage basePage) : base(basePage)
         {
-            _goToLoginPortal = TestObjectFactory.Get(Locator.CssSelector, "button.btn.btn-arrow.no-arrow.white.white-gradient.has-label");
+            _goToLoginPortal = TestObjectFactory.Get(Locator.CssSelector, "body > header > div > div > div.row > div.menu-tools.desktop > button:nth-child(2)");
         }
 
         public bool IsDisplayed()
