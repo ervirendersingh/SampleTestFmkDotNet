@@ -11,9 +11,11 @@ node {
 		bat './runtests.bat'
 	}	
 
-	stage('push results to gcs'){
-            // After build, always upload local object named PATTERN to GCS bucket.
-           googleStorageUpload bucket: 'gs://autotestresults', credentialsId: 'acdc', pattern: 'TestResult.xml'
+	stage ('Zip Results and push to gcs') {
+        zip zipFile: 'results.zip', archive: false, dir: 'Results'
+        archiveArtifacts artifacts: 'results.zip', fingerprint: true
+		googleStorageUpload bucket: 'gs://autotestresults', credentialsId: 'acdc', pattern: 'results.zip'
+            
     }
 
 	stage('publish results'){

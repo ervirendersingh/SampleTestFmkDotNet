@@ -22,8 +22,8 @@ C:\SampleTestFmkDotNet\Selenium\bin\Debug\WebDriver.Support.dll
 C:\SampleTestFmkDotNet\Selenium\bin\Debug\Ninject.xml
 C:\SampleTestFmkDotNet\Selenium\bin\Debug\WebDriver.xml
 C:\SampleTestFmkDotNet\Selenium\bin\Debug\WebDriver.Support.xml
+C:\SampleTestFmkDotNet\Selenium\obj\Debug\Selenium.csprojAssemblyReference.cache
 C:\SampleTestFmkDotNet\Selenium\obj\Debug\Selenium.csproj.CoreCompileInputs.cache
 C:\SampleTestFmkDotNet\Selenium\obj\Debug\Selenium.csproj.CopyComplete
 C:\SampleTestFmkDotNet\Selenium\obj\Debug\Selenium.dll
 C:\SampleTestFmkDotNet\Selenium\obj\Debug\Selenium.pdb
-C:\SampleTestFmkDotNet\Selenium\obj\Debug\Selenium.csprojAssemblyReference.cache
