@@ -1,4 +1,9 @@
 node {
+
+	stage('CleanUp') {
+		cleanWs deleteDirs: true, patterns: [[pattern: 'Results', type: 'INCLUDE'], [pattern: 'results.zip', type: 'INCLUDE']]
+	}
+
 	stage('Checkout git repo') {
       git branch: 'testbranch', url: params.git_repo
     }
@@ -25,4 +30,6 @@ node {
 	stage('send slack notification'){
 		slackSend iconEmoji: '', message: 'Test execution finished !!!', teamDomain: 'marvelstadium', tokenCredentialId: 'slackcreds', username: ''
 	}
+
+	
 }
