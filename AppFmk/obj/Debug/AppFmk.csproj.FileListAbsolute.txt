@@ -26,7 +26,6 @@ C:\SampleTestFmkDotNet\AppFmk\bin\Debug\AppFmk.dll.config
 C:\SampleTestFmkDotNet\AppFmk\bin\Debug\AppFmk.dll
 C:\SampleTestFmkDotNet\AppFmk\bin\Debug\AppFmk.pdb
 C:\SampleTestFmkDotNet\AppFmk\bin\Debug\HtmlAgilityPack.dll
-C:\SampleTestFmkDotNet\AppFmk\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\SampleTestFmkDotNet\AppFmk\bin\Debug\Newtonsoft.Json.dll
 C:\SampleTestFmkDotNet\AppFmk\bin\Debug\Ninject.dll
 C:\SampleTestFmkDotNet\AppFmk\bin\Debug\Selenium.dll

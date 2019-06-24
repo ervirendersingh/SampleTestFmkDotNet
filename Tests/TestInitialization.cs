@@ -31,9 +31,9 @@ namespace Tests
             string dirPath;
 
             if (browserForAllTests != "")
-                dirPath = Directory.GetCurrentDirectory() + "\\" + Todaysdate + "\\" + browserForAllTests + "\\" + "Screenshots";
+                dirPath = Directory.GetCurrentDirectory() + "\\Results\\" + browserForAllTests + "\\" + "Screenshots";
             else
-                dirPath = Directory.GetCurrentDirectory() + "\\" + Todaysdate + "\\" + "Screenshots";
+                dirPath = Directory.GetCurrentDirectory() + "\\Results\\" + "Screenshots";
 
             if (!Directory.Exists(dirPath))
                 Directory.CreateDirectory(dirPath);

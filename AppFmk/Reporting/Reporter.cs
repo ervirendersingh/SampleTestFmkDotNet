@@ -38,19 +38,19 @@ namespace AppFmk.Reporting
 
             if (browserForAllTests != "")
             {
-                filePath = Directory.GetCurrentDirectory() + "\\" + Todaysdate + "\\" + browserForAllTests + "\\" + fixtureName + ".html";
+                filePath = Directory.GetCurrentDirectory() + "\\Results\\" + browserForAllTests + "\\" + fixtureName + ".html";
 
-                if (!Directory.Exists(Directory.GetCurrentDirectory() + "\\" + Todaysdate))
-                    Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\" + Todaysdate);
+                if (!Directory.Exists(Directory.GetCurrentDirectory() + "\\Results"))
+                    Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\Results");
 
-                if (!Directory.Exists(Directory.GetCurrentDirectory() + "\\" + Todaysdate + "\\" + browserForAllTests))
-                    Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\" + Todaysdate + "\\" + browserForAllTests);
+                if (!Directory.Exists(Directory.GetCurrentDirectory() + "\\Results\\" + browserForAllTests))
+                    Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\Results\\" + browserForAllTests);
             }
             else
             {
-                filePath = Directory.GetCurrentDirectory() + "\\" + Todaysdate + "\\" + fixtureName + ".html";
-                if (!Directory.Exists(Directory.GetCurrentDirectory() + "\\" + Todaysdate))
-                    Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\" + Todaysdate);
+                filePath = Directory.GetCurrentDirectory() + "\\Results\\" + fixtureName + ".html";
+                if (!Directory.Exists(Directory.GetCurrentDirectory() + "\\Results"))
+                    Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\Results");
             }
 
 

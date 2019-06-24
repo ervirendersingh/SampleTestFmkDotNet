@@ -33,7 +33,6 @@ namespace Selenium.Helpers
                 options = new ChromeOptions();
                 options.AddArguments("start-maximized");
                 options.AddAdditionalCapability(CapabilityType.Platform, "LINUX", true);
-                options.AddAdditionalCapability(CapabilityType.Version, "75.0.3770.80", true);
                // capabilities = options.ToCapabilities() as DesiredCapabilities;
               //  foreach (var settingKeyValuePair in _browserSetttings)
               //  {

@@ -16,13 +16,13 @@ C:\QA-master\QA-master\LAFTestAutomation\LAFTestAutomation_Ver45\Selenium\obj\De
 C:\SampleTestFmkDotNet\Selenium\bin\Debug\chromedriver.exe
 C:\SampleTestFmkDotNet\Selenium\bin\Debug\Selenium.dll
 C:\SampleTestFmkDotNet\Selenium\bin\Debug\Selenium.pdb
-C:\SampleTestFmkDotNet\Selenium\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\SampleTestFmkDotNet\Selenium\bin\Debug\Ninject.dll
 C:\SampleTestFmkDotNet\Selenium\bin\Debug\WebDriver.dll
 C:\SampleTestFmkDotNet\Selenium\bin\Debug\WebDriver.Support.dll
 C:\SampleTestFmkDotNet\Selenium\bin\Debug\Ninject.xml
 C:\SampleTestFmkDotNet\Selenium\bin\Debug\WebDriver.xml
 C:\SampleTestFmkDotNet\Selenium\bin\Debug\WebDriver.Support.xml
+C:\SampleTestFmkDotNet\Selenium\obj\Debug\Selenium.csprojAssemblyReference.cache
 C:\SampleTestFmkDotNet\Selenium\obj\Debug\Selenium.csproj.CoreCompileInputs.cache
 C:\SampleTestFmkDotNet\Selenium\obj\Debug\Selenium.csproj.CopyComplete
 C:\SampleTestFmkDotNet\Selenium\obj\Debug\Selenium.dll
