@@ -17,7 +17,7 @@ node {
     }
 
 	stage 'publish results' {
-            // After build, always upload local object named PATTERN to GCS bucket.
-           googleStorageUpload bucket: 'gs://autotestresults', credentialsId: 'acdc', pattern: 'TestResult.xml'
+           
+           nunit testResultsPattern: './TestResult.xml'
     }
 }
